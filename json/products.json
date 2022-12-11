@@ -1,0 +1,337 @@
+[{
+  "_id": {
+    "$oid": "61cab03a474561c3fd1a1fee"
+  },
+  "name": "bed10",
+  "description": "this is cute bed",
+  "price": 230,
+  "rating": 0,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    },
+    {
+      "public_id": "sample_image_2",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61d51731fa84fcdeb5ce5d63"
+      }
+    }
+  ],
+  "category": "Laptop",
+  "Stock": 1,
+  "reviews": [],
+  "createAt": {
+    "$date": "2021-12-28T06:35:38.570Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61cab04d474561c3fd1a1ff7"
+  },
+  "name": "bed10",
+  "description": "this is cute bed",
+  "price": 230,
+  "rating": 0,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "beds1",
+  "Stock": 6,
+  "reviews": [],
+  "createAt": {
+    "$date": "2021-12-28T06:35:57.570Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61cab083474561c3fd1a2000"
+  },
+  "name": "chocalate",
+  "description": "this is cute bed",
+  "price": 230,
+  "rating": 0,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "beds1",
+  "Stock": 7,
+  "reviews": [],
+  "createAt": {
+    "$date": "2021-12-28T06:36:51.120Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61cc106ad4b8d7b805dddae3"
+  },
+  "name": "sample",
+  "description": "this is cute bed",
+  "price": 30000,
+  "rating": 0,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 7,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [],
+  "createAt": {
+    "$date": "2021-12-29T07:38:18.937Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61cc61275a072e80dbab21a9"
+  },
+  "name": "subscribe",
+  "description": "this is cute bed",
+  "price": 1000,
+  "ratings": 4,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 6,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "61d56d08850402109c678ded"
+      },
+      "user": {
+        "$oid": "61d3312652f1912134739ecf"
+      },
+      "name": "Moni",
+      "rating": 4,
+      "comment": ""
+    }
+  ],
+  "createAt": {
+    "$date": "2021-12-29T13:22:47.311Z"
+  },
+  "__v": 1,
+  "color": [],
+  "numofReviews": 1
+},{
+  "_id": {
+    "$oid": "61cc69bc2cb81cc733047bde"
+  },
+  "name": "subscribeMepls",
+  "description": "this is cute bed",
+  "price": 2000,
+  "ratings": 4.666666666666667,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 7,
+  "numofReviews": 3,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [
+    {
+      "user": {
+        "$oid": "61cabdd3679c696e861bde56"
+      },
+      "name": "moni",
+      "rating": 4,
+      "_id": {
+        "$oid": "61cc6a1e2cb81cc733047be4"
+      }
+    },
+    {
+      "user": {
+        "$oid": "61cc6c68bdaf2119de700cd8"
+      },
+      "name": "temp",
+      "rating": 5,
+      "_id": {
+        "$oid": "61cc6cd0bdaf2119de700ce4"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "61d59219b109d91c3c9b1fa2"
+      },
+      "user": {
+        "$oid": "61d3312652f1912134739ecf"
+      },
+      "name": "Moni",
+      "rating": 5,
+      "comment": ""
+    }
+  ],
+  "createAt": {
+    "$date": "2021-12-29T13:59:24.459Z"
+  },
+  "__v": 3,
+  "color": []
+},{
+  "_id": {
+    "$oid": "61cc798b583a4e1f3050caf9"
+  },
+  "name": "sorry",
+  "description": "this is cute bed",
+  "price": 3000,
+  "ratings": 44,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 8,
+  "numofReviews": 1,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [
+    {
+      "user": {
+        "$oid": "61cabdd3679c696e861bde56"
+      },
+      "name": "moni",
+      "rating": 44,
+      "comment": "hello",
+      "_id": {
+        "$oid": "61cc79d4583a4e1f3050cb07"
+      }
+    }
+  ],
+  "createAt": {
+    "$date": "2021-12-29T15:06:51.676Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61cc8de30c3f40e880f0ef09"
+  },
+  "name": "how are you",
+  "description": "this is cute bed",
+  "price": 4000,
+  "ratings": 5,
+  "images": [
+    {
+      "public_id": "hello hii",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 5,
+  "numofReviews": 1,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [
+    {
+      "user": {
+        "$oid": "61cc6c68bdaf2119de700cd8"
+      },
+      "name": "temp",
+      "rating": 5,
+      "comment": "nice",
+      "_id": {
+        "$oid": "61cc8fbd0c3f40e880f0ef21"
+      }
+    }
+  ],
+  "createAt": {
+    "$date": "2021-12-29T16:33:39.215Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "61d16abe38d556056464c371"
+  },
+  "name": "product",
+  "description": "this is cute bed",
+  "price": 6000,
+  "ratings": 2,
+  "images": [
+    {
+      "public_id": "sample Image",
+      "url": "https://4.imimg.com/data4/EH/NN/MY-17368652/boys-casual-shirt-500x500.jpg",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    },
+    {
+      "public_id": "sample Image 2",
+      "url": "https://cdn.pixabay.com/photo/2014/12/22/00/07/tree-576847__480.png",
+      "_id": {
+        "$oid": "61c9f14a8aa9c0b0d65fba53"
+      }
+    }
+  ],
+  "category": "machines",
+  "Stock": 8,
+  "numofReviews": 1,
+  "user": {
+    "$oid": "61cabdd3679c696e861bde56"
+  },
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "61d5727ec1337c20500ad392"
+      },
+      "user": {
+        "$oid": "61d3312652f1912134739ecf"
+      },
+      "name": "Moni",
+      "rating": 2,
+      "comment": "amazing"
+    }
+  ],
+  "createAt": {
+    "$date": "2022-01-02T09:05:02.474Z"
+  },
+  "__v": 1,
+  "color": []
+}]

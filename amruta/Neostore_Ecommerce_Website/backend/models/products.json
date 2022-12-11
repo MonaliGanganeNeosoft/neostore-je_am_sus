@@ -1,0 +1,15 @@
+[
+  {
+    "_id": {
+      "$oid": "61e2d05f2adb958502693677"
+    },
+
+    "product_name": "sofa1",
+    "product_image": "https://www.ikea.com/in/en/images/products/gammalbyn-3-seat-sofa-red__0868918_pe781428_s5.jpg?f=xl",
+    "product_desc": "Sitting Tool to feel relaxed",
+    "product_subimages": [],
+    "product_cost": 9000,
+    "product_rating": 3,
+    "product_ratingCount": 3
+  }
+]

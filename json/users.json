@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "61d3300552f1912134739ec5"
+  },
+  "role": "user",
+  "name": "shreyu",
+  "email": "shreyu@gmail.com",
+  "password": "$2a$10$HDpChN0RxW9h1qik.kp4xOgWrilbD7h0TfXy2/CCvsJhOml1.VcNW",
+  "avatar": {
+    "public_id": "avatars/qtzmamznivllmncloe2g",
+    "url": "https://res.cloudinary.com/drjlacryj/image/upload/v1641230343/avatars/qtzmamznivllmncloe2g.png"
+  },
+  "createdAt": {
+    "$date": "2022-01-03T17:19:01.980Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d3312652f1912134739ecf"
+  },
+  "role": "admin",
+  "name": "Moni",
+  "email": "moni.gangane@gmail.com",
+  "password": "$2a$10$MrNZvQJ1pT/egwEGPQI47OJ3469aYmvzX./d8ISCbApj1jMLtHJiW",
+  "avatar": {
+    "public_id": "avatars/vfnz0dnkiiaha226dvqr",
+    "url": "https://res.cloudinary.com/drjlacryj/image/upload/v1641358257/avatars/vfnz0dnkiiaha226dvqr.jpg"
+  },
+  "createdAt": {
+    "$date": "2022-01-03T17:23:50.935Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d3318752f1912134739edb"
+  },
+  "role": "user",
+  "name": "test",
+  "email": "Test@gmail.com",
+  "password": "$2a$10$qYsKBZmWymN6K1iFX7o4eOKgNko372ri.7EbjfBOPyGUnm/I.ZkVe",
+  "avatar": {
+    "public_id": "avatars/gvvvjyxc1jq7zigznpuf",
+    "url": "https://res.cloudinary.com/drjlacryj/image/upload/v1641230728/avatars/gvvvjyxc1jq7zigznpuf.jpg"
+  },
+  "createdAt": {
+    "$date": "2022-01-03T17:25:27.661Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d33266e0493920d880745e"
+  },
+  "role": "user",
+  "name": "piyu",
+  "email": "piyu@gmail.com",
+  "password": "$2a$10$JCYJffb7d1Pym9TmclOHoOYL1yZ.CcQDvkcHs15Dnk.cSxmMbSA4i",
+  "avatar": {
+    "public_id": "avatars/qncxo1dgembmzc28zeqy",
+    "url": "https://res.cloudinary.com/drjlacryj/image/upload/v1641230951/avatars/qncxo1dgembmzc28zeqy.jpg"
+  },
+  "createdAt": {
+    "$date": "2022-01-03T17:29:10.845Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d58990897d102c5014bb7b"
+  },
+  "role": "user",
+  "name": "tejas",
+  "email": "tejas@gmail.com",
+  "password": "$2a$10$CdHpkXKfETlVj6LzVQHEyOeFmFzJVZckIaCprfHcS2LiyvkjEETRe",
+  "avatar": {
+    "public_id": "avatars/ibqzmzmyv6lznbmfhxma",
+    "url": "https://res.cloudinary.com/drjlacryj/image/upload/v1641384336/avatars/ibqzmzmyv6lznbmfhxma.png"
+  },
+  "createdAt": {
+    "$date": "2022-01-05T12:05:36.778Z"
+  },
+  "__v": 0
+}]

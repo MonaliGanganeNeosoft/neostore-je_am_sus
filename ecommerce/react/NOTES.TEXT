@@ -1,0 +1,1708 @@
+https://stripe.com/docs/testing
+
+
+//   product_details: [
+//     {
+    //   subImages_id: {
+    //                     product_subImages: [
+    //                     {
+    //                         subImages_id: {
+    //                         type: String,
+    //                         required: true,
+    //                         },
+    //                         url: {
+    //                         type: String,
+    //                         required: true,
+    //                         },
+    //                     },
+    //                     ],
+    //                  },
+    //   category_id: {
+    //                     category_name: {
+    //                     type: String,
+    //                     required: [true, "pls enter category name"],
+    //                     },
+    //                     category_id: {
+    //                     type: Number,
+    //                     required: true,
+    //                     },
+    //                     created_at: {
+    //                     type: Date,
+    //                     default: Date.now,
+    //                     },
+    //                 },
+    //   color_id: {
+    //                 color_name: {
+    //                 type: String,
+    //                 required: [true, "pls enter color name"],
+    //                 },
+    //                 color_code: {
+    //                 type: Number,
+    //                 required: true,
+    //                 },
+    //                 color_id: {
+    //                 type: Number,
+    //                 required: true,
+    //                 },
+    //             },
+    //   product_id:{
+    //                 type: Number,
+    //                 required: true,
+
+    //             },
+
+    //   product_name: {
+    //                 type: String,
+    //                 required: [true, "pls enter Product name"],
+    //                 trim: true,
+    //             },
+    //   product_image: [
+    //                     {
+    //                     public_id: {
+    //                         type: String,
+    //                         required: true,
+    //                     },
+    //                     url: {
+    //                         type: String,
+    //                         required: true,
+    //                     },
+    //                     },
+    //                 ],
+    //   product_desc: {
+    //                     type: String,
+    //                     required: [true, "pls enter product description"],
+    //                 },
+    //   product_rating: {
+    //                     type: Number,
+    //                     default: 0,
+    //                 },
+    //   product_producer: {
+    //                         type: String,
+    //                         required: [true, "pls enter product producer"],
+    //                     },
+    //   product_cost: {
+    //                     type: Number,
+    //                     required: [true, "pls enter product cost"],
+    //                     maxLength: [8, "price cannot exced 8 chareter"],
+    //                 },
+    //   product_stock: {
+    //                     type: Number,
+    //                     required: [true, "pls enter product stock"],
+    //                     maxLength: [4, "stock cannot exceed 4 charters"],
+    //                     default: 1,
+    //                 },
+    //   product_dimension: {
+    //                     type: String,
+    //                     required: [true, "pls enter dimension"],
+    //                 },
+    //   product_material: {
+    //                     type: String,
+    //                     required: [true, "pls enter material"],
+    //                 },
+    //   numofReviews: {
+    //                     type: Number,
+    //                     default: 0,
+    //                 },
+    //   reviews: [
+    //                 {
+    //                 user: {
+    //                     type: mongoose.Schema.ObjectId,
+    //                     ref: "User",
+    //                     required: true,
+    //                 },
+    //                 name: {
+    //                     type: String,
+    //                     required: true,
+    //                 },
+    //                 rating: {
+    //                     type: Number,
+    //                     required: true,
+    //                 },
+    //                 comment: {
+    //                     type: String,
+    //                     required: true,
+    //                 },
+    //                 },
+    //             ],
+
+      
+    //   user: {
+    //                 type: mongoose.Schema.ObjectId,
+    //                 ref: "User",
+    //                 required: true,
+    //             },
+    //   createAt: {
+    //             type: Date,
+    //             default: Date.now,
+    //         },
+   // },
+//   ],
+
+
+
+
+//---->DATABASE VALUES=>
+// {
+//     product_details:[
+//         {
+//             subImages_id:{
+//                 product_subImages:[
+//                     {
+//                         "subImages_id":"hii",
+//                     }
+//                     {
+//                         "url":"hii",
+//                     }
+//                 ]
+//             }
+//             category_id:{
+//                 "category_name":"hii",
+//                 "category_id":12,
+
+//             },
+//             color_id:{
+//                 "color_name":"pink",
+//                 "color_code":123,
+//                 "color_id":12
+//             },
+//             "product_id":1,
+//             "product_name":"hii",
+//             product_image:[
+//                 "public_id":"hii",
+//                 "url":"hii",
+//             ],
+//             "product_desc":"hii",
+//             "product_rating":56,
+//             "product_producer":"hii",
+//             "product_cost":67,
+//             "product_stock":7,
+//             "product_dimension":"hii",
+//             "product_material":"hii",
+//             "numofReviews":7,
+//             reviews:[
+//                 {
+//                     "user":12,
+//                     "name":"hii",
+//                     "rating":2,
+//                     "comment":"hii",
+
+//                 }
+//             ]
+//             "user":2,
+            
+
+//         }
+//     ]
+// }
+
+
+
+
+===>correct DATABASE
+
+{
+    
+    "product_details":[
+        {
+            "subImages_id":{
+                "product_subImages":[
+                    {
+                        "subImages_id":"hii"
+                    },
+                    {
+                        "url":"hii"
+                    }
+                ]
+            },
+            "category_id":{
+                "category_name":"hii",
+                "category_id":12
+
+            },
+            "color_id":{
+                "color_name":"pink",
+                "color_code":123,
+                "color_id":12
+            },
+            "product_id":1,
+            "product_name":"hii",
+            "product_image":[
+               {
+                    "public_id":"hii",
+                "url":"hii"
+               }
+            ],
+            "product_desc":"hii",
+            "product_rating":56,
+            "product_producer":"hii",
+            "product_cost":67,
+            "product_stock":7,
+            "product_dimension":"hii",
+            "product_material":"hii",
+            "numofReviews":7,
+            "reviews":[
+                {
+                    "user":12,
+                    "name":"hii",
+                    "rating":2,
+                    "comment":"hii"
+
+                }
+            ],
+            "user":2
+            
+
+        }
+    ]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ name: {
+            type: String,
+            required:[true,"pls enter product name"],
+        },
+        description:{
+            type:String,
+            required:[true,"pls enter product desc"]
+        },
+        user:{
+            type:mongoose.Schema.ObjectId,
+            ref:"User",
+            required:true,
+        }
+
+
+// import React from 'react';
+// import "./Home.css"
+// import ProductCard from "./ProductCard";
+
+// const product = {
+//     name:"table",
+//     images:[{url:"https://img.muji.net/img/item/4547315892464_02_400.jpg"}],
+//     price:"Rs 2000",
+//     _id:"moni"
+// }
+// const Home = () => {
+   
+    
+//     return (
+//         <>
+       
+           
+//         {/* <MetaData title="Home page is working"/> */}
+//         <h2 className='homeHeading'>Fetured Products</h2>
+//         <div className='container' id='container'>
+//             <ProductCard product={product}/>
+//         </div>
+        
+        
+           
+     
+//         </>
+//     )
+// }
+
+// export default Home
+
+
+
+
+
+class ApiFeture{
+    constructor(query,queryStr){
+        this.query = query;
+        this.queryStr = queryStr
+    }
+    search(){
+        const keyword = this.queryStr.keyword ? {
+            name:{
+                $regex:this.queryStr.keyword,
+                $options:"i",
+            },
+        }:{};
+        //console.log(keyword);
+        this.query = this.query.find({...keyword});
+        return this;
+
+    }
+
+    filter(){
+        const queryCopy = {...this.queryStr}
+        //console.log(queryCopy);
+
+        //Remving some fields for category
+        const removeFields = ["keyword","page","limit"];
+        removeFields.forEach(key=>delete queryCopy[key]);
+        //console.log(queryCopy);
+        this.query = this.query.find(queryCopy)
+        return this;
+
+    }
+};
+module.exports = ApiFeture;
+
+
+
+
+
+
+
+
+
+
+
+import {positions,transitions,Provider as AlertProvider} from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+const options = {
+  timeout:5000,
+  position:positions.BOTTOM_CENTER,
+  transition:transitions.SCALE,
+};
+
+ReactDOM.render(
+  <Provider store={store}>
+    <AlertProvider template={AlertTemplate}{...options}>
+    <App/>
+    </AlertProvider>
+  </Provider>,
+
+
+
+
+
+
+
+
+
+
+
+  import React from "react";
+import { Link } from "react-router-dom";
+import { Card, Button } from "react-bootstrap";
+import ReactStars from "react-rating-stars-component";
+
+const Product = ({ product }) => {
+  const options = {
+    edit: false,
+    color: "rgba(20,20,20,0.1)",
+    activeColor: "tomato",
+    size: window.innerWidth < 600 ? 20 : 25,
+    value:product.product_rating,
+    isHalf: true,
+  };
+  return (
+    <>
+      <Link className="productCard" to={`/product/${product._id}`}>
+        <Card style={{ width: "18rem",marginLeft:"10px",marginBottom:"10px" }}>
+          <Card.Img
+            variant="top"
+            src={product.product_image[0].url}
+            alt={product.product_name}
+            style={{height:"150px"}}
+          />
+          <Card.Body>
+            <Card.Title>{product.product_name}</Card.Title>
+            <Card.Text>
+              <ReactStars {...options} />
+            </Card.Text>
+            <span>{`Rs${product.product_cost}`}</span>
+          </Card.Body>
+        </Card>
+      </Link>
+    </>
+  );
+};
+
+export default Product;
+
+
+
+
+
+import React,{useEffect} from 'react';
+import "./Home.css";
+import Product from "./Product";
+import MetaData from '../layout/MetaData';
+import { getProduct } from '../../actions/productAction';
+import {useSelector,useDispatch} from "react-redux";
+import Loader from "../layout/Loader/Loader";
+import { useAlert } from 'react-alert';
+
+// const product = {
+//     name:"table",
+//     images:[{url:"https://img.muji.net/img/item/4547315892464_02_400.jpg"}],
+//     price:"Rs 2000",
+//     _id:"moni"
+// }
+const Home = () => {
+    const alert = useAlert()
+    const dispatch = useDispatch();
+    const {loading,error,products,productsCount}=useSelector(
+        (state)=>state.products
+    );
+    useEffect(() =>  {
+        if(error){
+            alert.error(error)
+           
+        }
+        dispatch(getProduct());
+    }, [dispatch,error,alert]);
+    return (
+        <>
+       
+           
+        {
+            loading ? (<Loader/>):(<>
+            <MetaData title="Neostore"/>
+        <h2 className='homeHeading' style={{textAlign:"center"}}>Fetured Products</h2>
+        <div className='container' id='container'>
+       
+
+        </div>
+            </>)
+        }
+        
+        
+           
+     
+        </>
+    )
+}
+
+export default Home
+
+
+
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from 'react-dom';
+import App from './App';
+import {Provider} from "react-redux";
+import store from "./store";
+
+import {positions,transitions,Provider as AlertProvider} from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+const options = {
+  timeout:5000,
+  position:positions.BOTTOM_CENTER,
+  transition:transitions.SCALE,
+};
+
+ReactDOM.render(
+  <Provider store={store}>
+    <AlertProvider template={AlertTemplate}{...options}>
+    <App/>
+    </AlertProvider>
+  </Provider>,
+  document.getElementById('root')
+);
+
+
+
+{
+  "name": "demo1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.2.5",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
+    "react": "^17.0.2",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-material-ui-carousel": "^3.1.1",
+    "react-rating-stars-component": "^2.2.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://192.168.1.101:4000"
+}
+
+
+
+import React, { Fragment, useEffect } from "react";
+import { useSelector } from "react-redux";
+import MetaData from "../layout/MetaData";
+import Loader from "../layout/Loader/Loader";
+import { Link } from "react-router-dom";
+// import "./Profile.css";
+
+const Profile = ({ history }) => {
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
+
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      history.push("/login");
+    }
+  }, [history, isAuthenticated]);
+  return (
+    <Fragment>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Fragment>
+          <MetaData title={`${user.name}'s Profile`} />
+          <div className="profileContainer" >
+            <div >
+              <h1>My Profile</h1>
+              <img src={user.avatar.url} alt={user.name} />
+              <Link to="/me/update">Edit Profile</Link>
+            </div>
+            <div>
+              <div>
+                <h4>Full Name</h4>
+                <p>{user.first_name}<span> </span>{user.last_name}</p>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>{user.email}</p>
+              </div>
+              <div>
+                <h4>Joined On</h4>
+                <p>{String(user.createdAt).substr(0, 10)}</p>
+              </div>
+
+              <div>
+                <Link to="/orders">My Orders</Link>
+                <Link to="/password/update">Change Password</Link>
+              </div>
+            </div>
+          </div>
+        </Fragment>
+      )}
+    </Fragment>
+  );
+};
+
+export default Profile;
+
+//style={{border:"solid 2px red",marginTop:"60px"}}=>1st container
+
+
+
+
+
+<div className="p-4">
+            <h3>My Account</h3>
+            <hr />
+            <div className="myaccountmain">
+                <div style={{ width: '25%' }}>
+                    <div>
+                        <img /><br /><p className='text-center'>Monali</p>
+                    </div>
+                    <div className="myaccountsidebar">
+                        <button className='btn w-100' ><HiOutlineMenuAlt2 style={{ margin: '0 4 4 0', fontSize: 'larger' }} />Order</button>
+                        <button className='btn w-100' ><MdAccountBox style={{ margin: '0 4 4 0', fontSize: 'larger' }} />Profile</button>
+                        <button className='btn w-100' ><MdLibraryBooks style={{ margin: '0 4 4 0', fontSize: 'larger' }} />Address</button>
+                        <button className='btn w-100' ><BsArrowLeftRight style={{ margin: '0 4 4 0', fontSize: 'larger' }} />Change Password</button>
+                    </div>
+                </div>
+                <div style={{ width: '70%' }}>
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+<Fragment>
+          <MetaData title="Update Profile" />
+          <div className="updateProfileContainer">
+            <div className="updateProfileBox">
+              <h2 className="updateProfileHeading">Update Profile</h2>
+
+              <form
+                className="updateProfileForm"
+                encType="multipart/form-data"
+                onSubmit={updateProfileSubmit}
+              >
+                <div className="updateProfileName">
+                  <FaceIcon />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    name="first_name"
+                    value={first_name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className="updateProfileEmail">
+                  <MailOutlineIcon />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+
+                <div id="updateProfileImage">
+                  <img src={avatarPreview} alt="Avatar Preview" />
+                  <input
+                    type="file"
+                    name="avatar"
+                    accept="image/*"
+                    onChange={updateProfileDataChange}
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value="Update"
+                  className="updateProfileBtn"
+                />
+              </form>
+            </div>
+          </div>
+        </Fragment>
+
+
+
+
+// import React, { Fragment } from "react";
+// import "./Cart.css";
+// import CartItemCard from "./CartItemCard";
+// import { useSelector, useDispatch } from "react-redux";
+// import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
+// import { Typography } from "@material-ui/core";
+// import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
+// import { Link } from "react-router-dom";
+
+
+// const Cart = ({history}) => {
+//   const dispatch = useDispatch();
+//   const { cartItems } = useSelector((state) => state.cart);
+
+//   const increaseQuantity = (id, quantity, product_stock) => {
+//     const newQty = quantity + 1;
+//     if (product_stock <= quantity) {
+//       return;
+//     }
+//     dispatch(addItemsToCart(id, newQty));
+//   };
+//   const decreaseQuantity = (id, quantity) => {
+//     const newQty = quantity - 1;
+//     if (1 >= quantity) {
+//       return;
+//     }
+//     dispatch(addItemsToCart(id, newQty));
+//   };
+
+//   const deleteCartItems = (id) => {
+//     dispatch(removeItemsFromCart(id));
+//   };
+//   const checkoutHandler = () => {
+//     history.push("/login?redirect=shipping");
+//   };
+
+  
+
+//   return (
+//     <>{
+//       cartItems.length === 0 ? (<div className="emptyCart">
+//       <RemoveShoppingCartIcon />
+
+//       <Typography>No Product in Your Cart</Typography>
+//       <Link to="/products">View Products</Link>
+//     </div>):(<Fragment>
+//       <div className="cartPage">
+//             <div className="cartHeader">
+//                 <p>Product</p>
+//                 <p>Quantity</p>
+//                 <p>Subtotal</p>
+//             </div>
+
+//             {cartItems && cartItems.map((item)=>(
+//               <div className="cartContainer" key={item.product}>
+              
+//               <CartItemCard item={item} deleteCartItems={deleteCartItems} />
+
+//               <div className="cartInput">
+//               <button
+//                       onClick={() =>
+//                         decreaseQuantity(item.product, item.quantity)
+//                       }
+//                     >
+//                       -
+//                     </button>
+//                   <input type="number" value={item.quantity} readOnly />
+//                   <button onClick={()=>increaseQuantity(item.product,item.quantity,item.product_stock)} >+</button>
+//               </div>
+//               <p className="cartSubtotal">{`Rs${item.product_cost * item.quantity}`}</p>
+//             </div>
+
+//             ))}
+            
+//         <div className="cartGrossProfit">
+//                 <div></div>
+//                 <div className="cartGrossProfitBox">
+//                   <p>Gross Total</p>
+//                   <p>{`₹${cartItems.reduce(
+//                   (acc, item) => acc + item.quantity * item.product_cost,
+//                   0
+//                 )}`}</p>
+//                 </div>
+//               <div></div>
+//               <div className="checkOutBtn">
+//               <button onClick={checkoutHandler}>Check Out</button>
+//               </div>
+//         </div>
+//       </div>
+//     </Fragment>)
+//     }
+//     </>
+//   );
+// };
+
+// export default Cart;
+
+
+
+// import React from 'react';
+// import "./CartItemCard.css";
+// import { Link } from "react-router-dom";
+
+// const CartItemCard = ({item,deleteCartItems}) => {
+//   return (
+//     <div className='CartItemCard'>
+//       <img src={item.product_image} alt="ssa" />
+//        <div>
+//         <Link to={`/product/${item.product}`}>{item.product_name}</Link>
+//         <Link to={`/product/${item.product}`}>{item.product_producer}</Link>
+        
+//         <span>{`Price: ₹${item.product_cost}`}</span>
+//                <p>
+//                       Status:
+//                       <b className={item.product.product_stock < 1 ? "redColor" : "greenColor"}>
+//                         {item.product.product_stock < 1 ? "OutOfStock" : "InStock"}
+//                       </b>
+//                </p>
+        
+//  <p onClick={() => deleteCartItems(item.product)}>Remove</p>      
+//         </div>
+      
+//     </div>
+//   )
+// }
+
+// export default CartItemCard;
+
+
+
+
+
+import React, { Fragment, useState } from "react";
+import "./Shipping.css";
+import { useSelector, useDispatch } from "react-redux";
+import { saveShippingInfo } from "../../actions/cartAction";
+import MetaData from "../layout/MetaData";
+import PinDropIcon from "@material-ui/icons/PinDrop";
+import HomeIcon from "@material-ui/icons/Home";
+import LocationCityIcon from "@material-ui/icons/LocationCity";
+import PublicIcon from "@material-ui/icons/Public";
+import PhoneIcon from "@material-ui/icons/Phone";
+import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation";
+import { Country, State } from "country-state-city";
+import { useAlert } from "react-alert";
+// import CheckoutSteps from "../Cart/CheckoutSteps";
+
+const Shipping = ({ history }) => {
+  const dispatch = useDispatch();
+  const alert = useAlert();
+  const { shippingInfo } = useSelector((state) => state.cart);
+
+  const [address, setAddress] = useState(shippingInfo.address);
+  const [city, setCity] = useState(shippingInfo.city);
+  const [state, setState] = useState(shippingInfo.state);
+  const [country, setCountry] = useState(shippingInfo.country);
+  const [pinCode, setPinCode] = useState(shippingInfo.pinCode);
+  const [phoneNo, setPhoneNo] = useState(shippingInfo.phoneNo);
+
+  const shippingSubmit = (e) => {
+    e.preventDefault();
+
+    if (phoneNo.length < 10 || phoneNo.length > 10) {
+      alert.error("Phone Number should be 10 digits Long");
+      return;
+    }
+    dispatch(
+      saveShippingInfo({ address, city, state, country, pinCode, phoneNo })
+    );
+    history.push("/order/confirm");
+  };
+
+  return (
+    <Fragment>
+      <MetaData title="Shipping Details" />
+
+      {/* <CheckoutSteps activeStep={0} /> */}
+
+      <div className="shippingContainer">
+        <div className="shippingBox">
+          <h2 className="shippingHeading">Shipping Details</h2>
+
+          <form
+            className="shippingForm"
+            encType="multipart/form-data"
+            onSubmit={shippingSubmit}
+          >
+            <div>
+              <HomeIcon />
+              <input
+                type="text"
+                placeholder="Address"
+                required
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <LocationCityIcon />
+              <input
+                type="text"
+                placeholder="City"
+                required
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <PinDropIcon />
+              <input
+                type="number"
+                placeholder="Pin Code"
+                required
+                value={pinCode}
+                onChange={(e) => setPinCode(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <PhoneIcon />
+              <input
+                type="number"
+                placeholder="Phone Number"
+                required
+                value={phoneNo}
+                onChange={(e) => setPhoneNo(e.target.value)}
+                size="10"
+              />
+            </div>
+
+            <div>
+              <PublicIcon />
+
+              <select
+                required
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+              >
+                <option value="">Country</option>
+                {Country &&
+                  Country.getAllCountries().map((item) => (
+                    <option key={item.isoCode} value={item.isoCode}>
+                      {item.name}
+                    </option>
+                  ))}
+              </select>
+            </div>
+
+            {country && (
+              <div>
+                <TransferWithinAStationIcon />
+
+                <select
+                  required
+                  value={state}
+                  onChange={(e) => setState(e.target.value)}
+                >
+                  <option value="">State</option>
+                  {State &&
+                    State.getStatesOfCountry(country).map((item) => (
+                      <option key={item.isoCode} value={item.isoCode}>
+                        {item.name}
+                      </option>
+                    ))}
+                </select>
+              </div>
+            )}
+
+            <input
+              type="submit"
+              value="Continue"
+              className="shippingBtn"
+              disabled={state ? false : true}
+            />
+          </form>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
+
+export default Shipping;
+
+
+
+<p><button className="btn" >Account
+                            <button className='btn w-100'><Link to="/account">Profile</Link></button>
+                            <button className='btn w-100'><Link to="/shipping">Address</Link></button>
+                           
+
+
+
+import React, { Fragment, useEffect, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import MetaData from "../layout/MetaData";
+import { Typography } from "@material-ui/core";
+import { useAlert } from "react-alert";
+import {
+  CardNumberElement,
+  CardCvcElement,
+  CardExpiryElement,
+  useStripe,
+  useElements,
+} from "@stripe/react-stripe-js";
+
+import axios from "axios";
+import "./payment.css";
+import CreditCardIcon from "@material-ui/icons/CreditCard";
+import EventIcon from "@material-ui/icons/Event";
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
+// import { createOrder, clearErrors } from "../../actions/orderAction";
+
+const Payment = ({ history }) => {
+  const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
+
+  const dispatch = useDispatch();
+  const alert = useAlert();
+  const stripe = useStripe();
+  const elements = useElements();
+  const payBtn = useRef(null);
+
+  const { shippingInfo, cartItems } = useSelector((state) => state.cart);
+  const { user } = useSelector((state) => state.user);
+  const { error } = useSelector((state) => state.newOrder);
+
+  const paymentData = {
+    amount: Math.round(orderInfo.totalPrice * 100),
+  };
+
+  const order = {
+    shippingInfo,
+    orderItems: cartItems,
+    itemsPrice: orderInfo.subtotal,
+    taxPrice: orderInfo.tax,
+    shippingPrice: orderInfo.shippingCharges,
+    totalPrice: orderInfo.totalPrice,
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+
+    payBtn.current.disabled = true;
+
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      const { data } = await axios.post(
+        "/api/v1/payment/process",
+        paymentData,
+        config
+      );
+
+      const client_secret = data.client_secret;
+
+      if (!stripe || !elements) return;
+
+      const result = await stripe.confirmCardPayment(client_secret, {
+        payment_method: {
+          card: elements.getElement(CardNumberElement),
+          billing_details: {
+            name: user.name,
+            email: user.email,
+            address: {
+              line1: shippingInfo.address,
+              city: shippingInfo.city,
+              state: shippingInfo.state,
+              postal_code: shippingInfo.pinCode,
+              country: shippingInfo.country,
+            },
+          },
+        },
+      });
+
+      // if (result.error) {
+      //   payBtn.current.disabled = false;
+
+      //   alert.error(result.error.message);
+      // } else {
+      //   if (result.paymentIntent.status === "succeeded") {
+      //     order.paymentInfo = {
+      //       id: result.paymentIntent.id,
+      //       status: result.paymentIntent.status,
+      //     };
+
+      //     dispatch(createOrder(order));
+
+      //     history.push("/success");
+      //   } else {
+      //     alert.error("There's some issue while processing payment ");
+      //   }
+      // }
+    } catch (error) {
+      payBtn.current.disabled = false;
+      alert.error(error.response.data.message);
+    }
+  };
+
+  // useEffect(() => {
+  //   if (error) {
+  //     alert.error(error);
+  //     dispatch(clearErrors());
+  //   }
+  // }, [dispatch, error, alert]);
+
+  return (
+    <Fragment>
+      <MetaData title="Payment" />
+      
+      <div className="paymentContainer">
+        <form className="paymentForm" onSubmit={(e) => submitHandler(e)}>
+          <Typography>Card Info</Typography>
+          <div>
+            <CreditCardIcon />
+            <CardNumberElement className="paymentInput" />
+          </div>
+          <div>
+            <EventIcon />
+            <CardExpiryElement className="paymentInput" />
+          </div>
+          <div>
+            <VpnKeyIcon />
+            <CardCvcElement className="paymentInput" />
+          </div>
+
+          <input
+            type="submit"
+            value={`Pay - ₹${orderInfo && orderInfo.totalPrice}`}
+            ref={payBtn}
+            className="paymentFormBtn"
+          />
+        </form>
+      </div>
+    </Fragment>
+  );
+};
+
+export default Payment;
+
+
+
+
+<div className="p-6" style={{border:"2px solid red"}}>
+            <div className='p-3' style={{ borderRadius: '10px', boxShadow: `0 4px 8px 0 rgba(0, 0, 0, 0.2)` }}>
+            <div>
+            {[0, 1, 2].map((ele, index) =>
+                <Card key={index} style={{}}>
+                    <Card.Body>
+                        <Card.Title><b style={{ color: "orange" }}>TRANSIT</b> Order By:{ }</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Placed on :{ }</Card.Subtitle>
+                        <hr />
+                        <Card.Text>
+                        {cartItems && cartItems.map((item)=>(
+                            <div>
+                                <img src={item.product_image} alt="ssa" style={{width:"100px",}} />
+                            </div>
+                        ))}
+
+                        {/* <img src={cartItems.product_image} alt="ssa" /> */}
+                        </Card.Text>
+                        <hr /><br />
+                        <Button variant="primary"><Link to="/order/confirm"> Download Invoice as PDF</Link></Button>
+                    </Card.Body>
+                </Card>
+            )}
+            </div>  
+            </div >
+            </div>
+
+
+
+
+{
+  /* <div className="p-6" style={{border:"2px solid red"}}>
+<div className='p-3' style={{ borderRadius: '10px', boxShadow: `0 4px 8px 0 rgba(0, 0, 0, 0.2)` }}>
+<div>
+{[0, 1, 2].map((ele, index) =>
+    <Card key={index} style={{}}>
+        <Card.Body>
+            <Card.Title><b style={{ color: "orange" }}>TRANSIT</b> Order By:{ }</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Placed on :{ }</Card.Subtitle>
+            <hr />
+            <Card.Text>
+            {cartItems && cartItems.map((item)=>(
+                <div>
+                    <img src={item.product_image} alt="ssa" style={{width:"100px",}} />
+                </div>
+            ))}
+
+            
+            </Card.Text>
+            <hr /><br />
+            <Button variant="primary"><Link to="/order/confirm"> Download Invoice as PDF</Link></Button>
+        </Card.Body>
+    </Card>
+)}
+</div>  
+</div >
+</div> */
+}
+
+
+
+
+
+import React,{useEffect} from "react";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { BsArrowLeftRight } from "react-icons/bs";
+import { MdAccountBox, MdLibraryBooks } from "react-icons/md";
+
+import { useSelector } from "react-redux";
+import Loader from "../layout/Loader/Loader";
+
+import "./myOrders.css";
+import { useDispatch } from "react-redux";
+import { clearErrors, myOrders } from "../../actions/orderAction";
+import { Link } from "react-router-dom";
+import { useAlert } from "react-alert";
+
+const Myorders = ({ history }) => {
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
+  const { cartItems } = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      history.push("/login");
+    }
+  }, [history, isAuthenticated]);
+
+  const dispatch = useDispatch();
+
+  const alert = useAlert();
+
+  const { error, orders} = useSelector((state) => state.myOrders);
+
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+
+    dispatch(myOrders());
+  }, [dispatch, alert, error]);
+  
+  return (
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div
+            className="p-4"
+            style={{ border: "2px solid red", width: "400px" }}
+          >
+            <h3>My Account</h3>
+            <hr />
+            <div className="myaccountmain">
+              <div style={{ width: "200%", border: "2px solid red" }}>
+                <div>
+                  <img src={user.avatar.url} alt={user.name} />
+                  <p className="text-center">
+                    {user.first_name} {user.last_name}
+                  </p>
+
+                  {/* <Link to="/me/update">Edit Profile</Link> */}
+                </div>
+                <div className="myaccountsidebar">
+                  <button className="btn w-100">
+                    <HiOutlineMenuAlt2
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/orders">Orders</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <MdAccountBox
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/account">Profile</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <MdLibraryBooks
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/shipping">Address</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <BsArrowLeftRight
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/password/update">Change Password</Link>
+                  </button>
+                </div>
+              </div>
+              <div style={{ width: "70%" }}></div>
+            </div>
+          </div>
+          <hr/>
+          <div className="p-3" style={{border:"2px solid red"}}>
+            <p>hii</p>
+            <h1>{`${user.name}`}</h1>
+          
+          </div>
+        </>
+      )}
+    </>
+  );
+};
+
+export default Myorders;
+
+
+
+
+
+
+
+import React, { Fragment, useEffect } from "react";
+import { DataGrid } from "@material-ui/data-grid";
+import "./myOrders.css";
+import { useSelector, useDispatch } from "react-redux";
+import { clearErrors, myOrders } from "../../actions/orderAction";
+import Loader from "../layout/Loader/Loader";
+import { Link } from "react-router-dom";
+import { useAlert } from "react-alert";
+import Typography from "@material-ui/core/Typography";
+import MetaData from "../layout/MetaData";
+import LaunchIcon from "@material-ui/icons/Launch";
+
+const MyOrders = () => {
+  const dispatch = useDispatch();
+
+  const alert = useAlert();
+
+  const { loading, error, orders } = useSelector((state) => state.myOrders);
+  const { user } = useSelector((state) => state.user);
+
+  const columns = [
+    { field: "id", headerName: "Order ID", minWidth: 300, flex: 1 }
+  ];
+  const rows = [];
+
+  orders &&
+    orders.forEach((item, index) => {
+      rows.push({
+        itemsQty: item.orderItems.length,
+        id: item._id,
+        // status: item.orderStatus,
+        // amount: item.totalPrice,
+      });
+    });
+
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+
+    dispatch(myOrders());
+  }, [dispatch, alert, error]);
+const details=[];
+  return (
+    <Fragment>
+      
+      {loading ? (
+        <Loader />
+      ) : (<>
+        <div className="myOrdersPage">
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            pageSize={5}
+            disableSelectionOnClick
+            className="myOrdersTable"
+            autoHeight
+          />
+
+          <Typography id="myOrdersHeading">{user.first_name}'s Orders</Typography>
+        </div>
+        <div className="pink" style={{borderColor:"none"}}>
+          {orders.map((item,index)=>{
+            return item._id,
+            item.taxPrice
+          })}
+          
+          <p > hiii</p>
+          {orders.map((item,index)=>{
+            return item._id
+          })}
+          <p>bye</p>
+          {orders && orders.map((item)=>(
+            <p>{`${item._id}`}</p>
+            
+          ))}
+          <p>bye</p>
+          {orders && orders.map((item)=>(
+            <div className="orderContainer" >
+              <p>{`${item._id}`}</p>
+              <p>{`${item.deliveredAt}`}</p>
+            </div>
+            
+          ))}
+        </div>
+        </>
+      )}
+    </Fragment>
+  );
+};
+
+export default MyOrders;
+
+
+import React,{useEffect} from "react";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { BsArrowLeftRight } from "react-icons/bs";
+import { MdAccountBox, MdLibraryBooks } from "react-icons/md";
+
+import { useSelector } from "react-redux";
+import Loader from "../layout/Loader/Loader";
+
+import "./myOrders.css";
+import { useDispatch } from "react-redux";
+import { clearErrors, myOrders } from "../../actions/orderAction";
+import { Link } from "react-router-dom";
+import { useAlert } from "react-alert";
+import{Card,Button} from "react-bootstrap";
+
+const Myorders = ({ history }) => {
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
+  const { cartItems } = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      history.push("/login");
+    }
+  }, [history, isAuthenticated]);
+
+  const dispatch = useDispatch();
+
+  const alert = useAlert();
+
+  const { error, orders} = useSelector((state) => state.myOrders);
+
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+
+    dispatch(myOrders());
+  }, [dispatch, alert, error]);
+  
+  return (
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div
+            className="p-4"
+            style={{ border: "2px solid red", width: "400px" }}
+          >
+            <h3>My Account</h3>
+            <hr />
+            <div className="myaccountmain">
+              <div style={{ width: "200%", border: "2px solid red" }}>
+                <div>
+                  <img src={user.avatar.url} alt={user.name} />
+                  <p className="text-center">
+                    {user.first_name} {user.last_name}
+                  </p>
+
+                  {/* <Link to="/me/update">Edit Profile</Link> */}
+                </div>
+                <div className="myaccountsidebar">
+                  <button className="btn w-100">
+                    <HiOutlineMenuAlt2
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/orders">Orders</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <MdAccountBox
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/account">Profile</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <MdLibraryBooks
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/shipping">Address</Link>
+                  </button>
+                  <button className="btn w-100">
+                    <BsArrowLeftRight
+                      style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                    />
+                    <Link to="/password/update">Change Password</Link>
+                  </button>
+                </div>
+              </div>
+              <div style={{ width: "70%" }}></div>
+            </div>
+          </div>
+          <hr/>
+          <div className="p-3" style={{border:"2px solid red"}}>
+            <p>hii</p>
+            <h1>{`${user.first_name}`}</h1>
+          
+          </div>
+
+          {
+   <div className="p-6" style={{border:"2px solid red"}}>
+<div className='p-3' style={{ borderRadius: '10px', boxShadow: `0 4px 8px 0 rgba(0, 0, 0, 0.2)` }}>
+<div>
+{[0, 1, 2].map((ele, index) =>
+    <Card key={index} style={{}}>
+        <Card.Body>
+            <Card.Title><b style={{ color: "orange" }}>TRANSIT</b> Order By:{ }</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Placed on :{ }</Card.Subtitle>
+            <hr />
+            <Card.Text>
+            {cartItems && cartItems.map((item)=>(
+                <div>
+                    <img src={item.product_image} alt="ssa" style={{width:"100px",}} />
+                </div>
+            ))}
+
+            
+            </Card.Text>
+            <hr /><br />
+            <Button variant="primary"><Link to="/order/confirm"> Download Invoice as PDF</Link></Button>
+        </Card.Body>
+    </Card>
+)}
+</div>  
+</div >
+</div> 
+}
+        </>
+      )}
+    </>
+  );
+};
+
+export default Myorders;
+
+
+
+
+import React,{useEffect} from "react";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { BsArrowLeftRight } from "react-icons/bs";
+import { MdAccountBox, MdLibraryBooks } from "react-icons/md";
+
+import { useSelector } from "react-redux";
+import Loader from "../layout/Loader/Loader";
+
+import "./myOrders.css";
+import { useDispatch } from "react-redux";
+import { clearErrors, myOrders } from "../../actions/orderAction";
+import { Link } from "react-router-dom";
+import { useAlert } from "react-alert";
+import{Card,Button} from "react-bootstrap";
+
+const Myorders = ({ history }) => {
+  const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
+
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
+  const { cartItems } = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      history.push("/login");
+    }
+  }, [history, isAuthenticated]);
+
+  const dispatch = useDispatch();
+
+  const alert = useAlert();
+
+  const { error, orders} = useSelector((state) => state.myOrders);
+
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+
+    dispatch(myOrders());
+  }, [dispatch, alert, error]);
+  const Ordering=[0]
+  return (
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+        <div className="p-6" style={{border:"2px solid red",display:"flex",flexWrap:"wrap"}}>
+            <div
+              className="p-4"
+              style={{ border: "2px solid red", width: "400px" }}
+            >
+              <h3>My Account</h3>
+              <hr />
+              <div className="myaccountmain">
+                <div style={{ width: "200%", border: "2px solid red" }}>
+                  <div>
+                    <img src={user.avatar.url} alt={user.name} />
+                    <p className="text-center">
+                      {user.first_name} {user.last_name}
+                    </p>
+
+                    {/* <Link to="/me/update">Edit Profile</Link> */}
+                  </div>
+                  <div className="myaccountsidebar">
+                    <button className="btn w-100">
+                      <HiOutlineMenuAlt2
+                        style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                      />
+                      <Link to="/orders">Orders</Link>
+                    </button>
+                    <button className="btn w-100">
+                      <MdAccountBox
+                        style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                      />
+                      <Link to="/account">Profile</Link>
+                    </button>
+                    <button className="btn w-100">
+                      <MdLibraryBooks
+                        style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                      />
+                      <Link to="/shipping">Address</Link>
+                    </button>
+                    <button className="btn w-100">
+                      <BsArrowLeftRight
+                        style={{ margin: "0 4 4 0", fontSize: "larger" }}
+                      />
+                      <Link to="/password/update">Change Password</Link>
+                    </button>
+                  </div>
+                </div>
+                <div style={{ width: "70%" }}></div>
+              </div>
+            </div>
+            <hr/>
+            
+          {
+            <div className="lastorders" style={{border:"2px solid red",width:"800px"}}>
+                <div className='lastclass' style={{ borderRadius: '10px', boxShadow: `0 4px 8px 0 rgba(0, 0, 0, 0.2)` }}>
+                <div>
+                {Ordering.map((ele, index) =>
+                    <Card key={index} style={{}}>
+                      {orders && orders.map((item)=>(
+                        <Card.Body>
+                        
+                            <Card.Title><b style={{ color: "orange" }}>TRANSIT</b> Order By:{`${item._id}`}</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">Placed on :{`${item.deliveredAt}`} <span style={{color:"green"}}>Price :{`Pay - ₹${orderInfo && orderInfo.totalPrice}`}</span></Card.Subtitle>
+                              <hr />
+                            <Card.Text>
+                            {cartItems && cartItems.map((item)=>(
+                                <div>
+                                    <img src={item.product_image} alt="ssa" style={{width:"100px",}} />
+                                </div>
+                            ))}  
+                            </Card.Text>
+                            <hr /><br />
+                            <Button variant="primary"><Link to="/order/confirm"> Download Invoice as PDF</Link></Button>
+                          
+
+                        </Card.Body>
+                        ))}
+                    </Card>
+                )}
+                </div>  
+                </div >
+            </div> 
+            }
+
+        </div>
+        </>
+      )}
+    </>
+  );
+};
+
+export default Myorders;
+
+
+

@@ -1,0 +1,13 @@
+use online-shop
+switched to db online-shop
+> db.users.find()
+{ "_id" : ObjectId("61b703d35aecd20a08b5251f"), "email" : "qwe@gmail.com", "password" : "$2a$12$jvrakY8ZBxaFXFal6xcP9O.BaEu8QyOiowrz.aD2movMehovAcJEm", "name" : "ab cv", "address" : { "street" : "pune", "postalCode" : "41101", "city" : "Thane" } }
+> db.users.find()
+{ "_id" : ObjectId("61b70891b0debc3c70daed65"), "email" : "abc@gmail.com", "password" : "$2a$12$MNPYkWbF2bz8T8MIyyruUO91y4.lYX3fnY/tECAp3ynYZUpbWuAh2", "name" : "Monali gangane", "address" : { "street" : "pune", "postalCode" : "41101", "city" : "pune" } }
+> db.users.updateOne({_id:ObjectId("61b70891b0debc3c70daed65")},{$set:{isAdmin:true}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> db.users.find()
+{ "_id" : ObjectId("61b70891b0debc3c70daed65"), "email" : "abc@gmail.com", "password" : "$2a$12$MNPYkWbF2bz8T8MIyyruUO91y4.lYX3fnY/tECAp3ynYZUpbWuAh2", "name" : "Monali gangane", "address" : { "street" : "pune", "postalCode" : "41101", "city" : "pune" }, "isAdmin" : true }
+
+
+Moni@123

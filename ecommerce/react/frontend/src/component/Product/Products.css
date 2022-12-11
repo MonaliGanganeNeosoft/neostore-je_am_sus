@@ -1,0 +1,7 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10vmax;
+    justify-content: center;
+    min-height: 30vh;
+  }
